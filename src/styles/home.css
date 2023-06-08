@@ -1,0 +1,31 @@
+.logo{
+   border-radius: 25%;
+   max-width: 18%;
+   height: auto;
+   margin-left: 10px;
+}
+
+.navbar{
+   margin: 0;
+   margin-right: 0;
+}
+
+.body{
+   background-image: url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3RhcnMlMjBibGFja3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80")
+}
+
+.character{
+   color: white;
+}
+
+.planets{
+   color: white;
+}
+
+.vehicles{
+   color: white;
+}
+
+.footer{
+   color: white;
+}

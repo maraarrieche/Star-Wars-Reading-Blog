@@ -63,8 +63,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			addToFavorites: newItem => {
 
+				
 				const auxStore = getStore();
-				if (!auxStore.favorites.find(item => item.id == newItem.id)) {
+				
+				console.log(auxStore.favorites.find(item => item.name == newItem.name))
+
+				if (!auxStore.favorites.find(item => item.name == newItem.name)) {
 					setStore({ favorites: [newItem, ...auxStore.favorites] });
 				}
 

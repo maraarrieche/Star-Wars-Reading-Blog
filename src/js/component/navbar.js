@@ -22,7 +22,11 @@ export const Navbar = () => {
   					<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 						{store.favorites.map((item, index) => {
 							return(
-   						<li key={index}><span className="dropdown-item" onClick={actions.removeProductFromCart(item)}></span>favoritos</li>
+   						<li key={index}>
+							<span className="dropdown-item" onClick={() => actions.removeProductFromCart(item)}>
+								{item.name}
+							</span>
+						</li>
 					)})}
   					</ul>
 			</div> 

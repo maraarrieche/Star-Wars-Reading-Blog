@@ -1,0 +1,12 @@
+.button { 
+    background: light-gray; 
+    color: black; 
+  } 
+  .button:hover { 
+    background: gray; 
+    color: white; 
+  } 
+  .button:active { 
+    background: red; 
+    color: red; 
+  } 

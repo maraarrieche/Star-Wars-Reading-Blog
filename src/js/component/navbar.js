@@ -13,9 +13,9 @@ export const Navbar = () => {
 				<img className="logo ms-4" src="https://lumiere-a.akamaihd.net/v1/images/sw_logo_stacked_2x-52b4f6d33087_7ef430af.png" />
 			</Link>
 			<div className="ml-auto">
-				<Link to="/demo">
-				<div className="container-fluid dropdown">
-  					<button  type="button" className="btn btn-warning dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				<Link to="/">
+				<div className="container-fluid dropdown me-5">
+  					<button  type="button" className="btn btn-warning dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
     					Favorites
   					</button>
 
@@ -25,6 +25,7 @@ export const Navbar = () => {
    						<li key={index}>
 							<span className="dropdown-item" onClick={() => actions.removeProductFromCart(item)}>
 								{item.name}
+								<i className="fas fa-trash-alt float-end ms-2"></i>
 							</span>
 						</li>
 					)})}

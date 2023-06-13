@@ -73,9 +73,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 
 			},
-			removeProductFromCart: targetProduct => {
-				const store = getStore();
-				setStore({ favorites: store.favorites.filter(items => items.id != targetProduct.id) });
+			removeProductFromCart: newItem => {
+				const store =getStore();
+
+				setStore({ favorites: store.favorites.filter(items => items.name != newItem.name)})
 			}
 		}
 

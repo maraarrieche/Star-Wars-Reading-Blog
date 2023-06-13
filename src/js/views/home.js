@@ -14,6 +14,7 @@ export const Home = () => {
 
 	return(
 		<>
+		<h1 className="text-white d-flex justify-content-center m-5">My Star Wars Reading Blog</h1>
 		<div className="container mt-4 character">
 		<h1>Characters</h1>
 		</div>
